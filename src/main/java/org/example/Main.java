@@ -3,10 +3,10 @@ class A {
     static int edad = 0;
     static double salario = 0.0;
 
-    static void datos(String n, int e, double s) {
-        nombre = n;
-        edad = e;
-        salario = s;
+    static void datos(String nombre, int edad, double salario) {
+        nombre = nombre;
+        edad = edad;
+        salario = salario;
     }
 
     static void mostrar() {
