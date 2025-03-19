@@ -29,7 +29,15 @@ class C {
 }
 
 
+/**
+ * Encapsulamiento de la clase main
+ * @author David Salgado
+ */
 public class Main {
+    /**
+     * @param args
+     * // Se renombró la variable 'b' a 'calcularBono' para mejorar la legibilidad del código.
+     */
     public static void main(String[] args) {
         A.datos("Juan Perez", 45, 50000);
         A.mostrar();
