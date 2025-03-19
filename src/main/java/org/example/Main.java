@@ -1,4 +1,4 @@
-class A {
+class Datos {
     static String nombre = "SinNombre";
     static int edad = 0;
     static double salario = 0.0;
@@ -19,10 +19,10 @@ class A {
 class B {
     void calcularBono() {
         double bono = 0;
-        if (A.edad > 50) {
-            bono = A.salario * 0.10;
+        if (Datos.edad > 50) {
+            bono = Datos.salario * 0.10;
         } else {
-            bono = A.salario * 0.05;
+            bono = Datos.salario * 0.05;
         }
         System.out.println("Bono: " + bono);
     }
@@ -30,18 +30,18 @@ class B {
 
 class C {
     void imprimirSaludo() {
-        if (A.edad < 18) {
-            System.out.println("Hola, joven " + A.nombre);
+        if (Datos.edad < 18) {
+            System.out.println("Hola, joven " + Datos.nombre);
         } else {
-            System.out.println("Hola, señor/a " + A.nombre);
+            System.out.println("Hola, señor/a " + Datos.nombre);
         }
     }
 }
 
 public class Main {
     public static void main(String[] args) {
-        A.datos("Juan Perez", 45, 50000);
-        A.mostrar();
+        Datos.datos("Juan Perez", 45, 50000);
+        Datos.mostrar();
         B b = new B();
         b.calcularBono();
         C c = new C();
